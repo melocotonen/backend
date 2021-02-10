@@ -1,9 +1,12 @@
+<img alt="Evalua logo" src="public/logo_e.png"/>
+
+
 # Prueba Senior Back-end
 
 ## Instrucciones sobre la realización de la prueba
-Para realizar esta prueba lo primero que se debe hacer es descargarse el repositorio. Una vez descargado el repositorio se debe hacer todas las modificaciones necesarias para poder realizar la prueba. Una vez realizado todos los cambios comprime el repositorio en un archivo zip y envíelo al e-mail que se te indica previamente en el correo.
+Para realizar esta prueba lo primero que debes hacer es descargarte el repositorio. Una vez descargado, debes realizar todas las modificaciones. Finalmente comprime todo el repositorio (sin la carpeta vendor/) en un archivo zip y envía este fichero zip al e-mail que se te indica previamente en el correo.
 
-La prueba tiene una duración máxima de dos horas y media. Está formada por dos preguntas, la primera de ellas es una pregunta puramente de programación para analizar los conocimientos que tenga el candidato sobre arquitectura DDD/Clean Arquitecture. La segunda pregunta está orientada a saber cómo estructurar a nivel de clases cierta funcionalidad.
+La prueba tiene una duración máxima de dos horas y media. Está formada por dos preguntas, la primera de ellas es una pregunta puramente de programación para analizar los conocimientos que tienes sobre arquitectura DDD/Clean Arquitecture. La segunda pregunta está orientada a saber cómo estructurar a nivel de clases cierta funcionalidad.
 
 Se ha creado un endpoint de prueba **/api/helloworld** para tener unas pautas. Más información en el fichero **routes/api.php**
 
@@ -17,7 +20,7 @@ En el repositorio tiene un proyecto Laravel 8 prácticamente limpio. Las únicas
 - Se ha configurado el fichero phpunit.xml para que pueda ejecutar las pruebas sobre una conexión de SQLite. Puede modificar este fichero si prefiere ejecutar las pruebas sobre una conexión mysql, por ejemplo.
 - Se han creado las factorías necesarias para realizar la prueba
 
-Imagine que tenemos la siguiente base de datos:
+Imagina que tenemos la siguiente base de datos:
 
 budgets
 
@@ -82,8 +85,8 @@ budgetLine a su vez será un DTO de este tipo:
 
 ## PREGUNTA 2
 
-Imagine que tenemos un listado de actores/actrices con una serie de características/atributos: sexo, edad, altura, idioma, etc.
+Imagina que tenemos un listado de actores/actrices con una serie de características/atributos: sexo, edad, altura, idioma, etc.
 
 Negocio nos pide poder elegir a los candidatos que más encajen según una serie de criterios, por ejemplo: "Queremos seleccionar a todas las actrices mayores de 40 años".
 
-Explique el diagrama de clases que deberá tener esta funcionalidad teniendo siempre presente que a lo largo del tiempo se podrán crear y desactivar filtros. **Importante**: no se pide codificar ninguna solución, se pide explicar el diagrama de clases.
+Explica el diagrama de clases que deberá tener esta funcionalidad teniendo siempre presente que a lo largo del tiempo se podrán crear y desactivar filtros. **Importante**: no se pide codificar ninguna solución, se pide explicar el diagrama de clases.
