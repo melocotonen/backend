@@ -14,11 +14,13 @@ Se ha creado un endpoint de prueba **/api/helloworld** para tener unas pautas. M
 
 En esta pregunta pedimos una solución orientada a una arquitectura **DDD/Clean Arquitecture**.
 
-En el repositorio tiene un proyecto Laravel 8 prácticamente limpio. Las únicas modificaciones que se han realizado son las siguientes:
+El repositorio tiene un proyecto Laravel 8 prácticamente limpio. Las únicas modificaciones que se han realizado son las siguientes:
 
 - Se ha creado las migraciones necesarias para realizar la prueba.
 - Se ha configurado el fichero phpunit.xml para que pueda ejecutar las pruebas sobre una conexión de SQLite. Puede modificar este fichero si prefiere ejecutar las pruebas sobre una conexión mysql, por ejemplo.
 - Se han creado las factorías necesarias para realizar la prueba
+
+Aunque el repositorio tenga un proyecto Laravel, hay libertad absoluta para realizar la prueba en cualquier framework.
 
 Imagina que tenemos la siguiente base de datos:
 
@@ -46,7 +48,7 @@ y nos piden realizar las siguientes tareas para que la API sea capaz de obtener 
 
 TAREA T1
 
-La API tiene que ser capaz de recibir una petición POST api/invoices y ser capaz de crear un presupuesto. El DTO de llegada será de este tipo:
+La API tiene que ser capaz de recibir una petición POST api/budgets y ser capaz de crear un presupuesto. El DTO de llegada será de este tipo:
 
 - Array de budgetLine
 
@@ -66,7 +68,7 @@ La cantidad total de un presupuesto será la suma de las cantidades totales de t
 
 TAREA T2
 
-La API tiene que ser capaz de obtener un presupuesto dependiendo del ID de la misma, al recibir una petición de este tipo GET api/invoices/{invoiceId}. El resultado que debe devolver la API debe ser el siguiente:
+La API tiene que ser capaz de obtener un presupuesto dependiendo del ID de la misma, al recibir una petición de este tipo GET api/budgets/{budgetId}. El resultado que debe devolver la API debe ser el siguiente:
 
 - budgetId
 - Array de budgetLine
